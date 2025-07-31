@@ -37,15 +37,23 @@ section {
 }
 
 .header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .logo-search {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
 
 .logo {
   min-width: max-content;
   font-size: 28px;
-  font-weight: 900;
+  font-weight: 900px;
   font-family: "Caveat", sans-serif;
 }
 
@@ -54,6 +62,9 @@ section {
   background: #1f1f27;
   padding: 10px 20px;
   border-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .search-bar input {
@@ -71,12 +82,19 @@ section {
 }
 
 .options {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .option {
   min-width: 60px;
   text-transform: capitalize;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .option i {
@@ -87,6 +105,10 @@ section {
 .categories {
   background-color: #2b2d36;
   padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .category {
@@ -111,6 +133,8 @@ section {
 }
 
 .view-options {
+  display: flex;
+  gap: 2rem;
 }
 
 i.fa-th-list {
@@ -120,6 +144,8 @@ i.fa-th-list {
 .section-control {
   padding-bottom: 20px;
   border-bottom: 1px solid #8d8ba5;
+  display: flex;
+  justify-content: space-between;
 }
 
 .section-control .view-option {
@@ -127,6 +153,9 @@ i.fa-th-list {
   height: 40px;
   border: 1px solid #8d8ba5;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .products {
@@ -182,6 +211,10 @@ i.fa-th-list {
 /* GRID VIEW STYLES */
 
 .grid.products {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
 }
 
 .grid .product {
@@ -195,25 +228,42 @@ i.fa-th-list {
 
 .grid .product-data {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .grid .product-info {
+  height: 38%;
   text-align: center;
-  padding: 0 20px 30px;
+  padding: 20px 20px 30px;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .grid .product-action {
   padding-top: 30px;
   border-top: 1px solid #8d8ba5;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 /* LINE VIEW STYLES */
 
 .lines.products {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .lines .product {
+  width: 100%;
   padding: 20px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .lines .product-image-wrapper {
@@ -222,20 +272,39 @@ i.fa-th-list {
 }
 
 .lines .product-data {
+  height: 100px;
 }
 
 .lines .product-info {
+  text-align: left;
+  padding: 5px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 .lines .product-action {
+  padding: 0 20px 20px;
+  /*border-top: 1px solid #8d8ba5;*/
+  display: flex;
+  justify-content: flex-start;
+  gap: 2.5rem;
 }
 
 /* LINES-ACTION VIEW */
 
 .lines-action.products {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .lines-action .product {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .lines-action .product-image-wrapper {
@@ -244,13 +313,27 @@ i.fa-th-list {
 }
 
 .lines-action .product-data {
+  display: flex;
+  flex-direction: row;
 }
 
 .lines-action .product-info {
+  text-align: left;
+  padding: 30px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 2.5rem;
 }
 
 .lines-action .product-action {
   border-left: 1px solid #8d8ba5;
   padding-left: 30px;
   min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
